@@ -5,7 +5,7 @@ import React, {useEffect, useReducer} from "react";
 import Web3 from "web3";
 import {ethers, providers} from "ethers";
 
-const {abi} = require('../../artifacts/contracts/Adoption.sol/Adoption.json')
+const {abi} = require('../artifacts/contracts/Adoption.sol')
 
 if (!abi) {
     throw new Error("Adoptiom.json ABI file missing. Run npx hardhat run contracts/deploy-contract-script.js")
